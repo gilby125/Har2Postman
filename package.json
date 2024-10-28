@@ -1,9 +1,10 @@
 {
   "name": "har2postman",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "description": "Har to postman converter",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jasmine JASMINE_CONFIG_PATH=./jasmine.json",
     "format:check": "npx eslint ./",
     "format:fix": "npx eslint ./ --fix"
@@ -22,7 +23,9 @@
     "url": "https://github.com/javieraviles/Har2Postman/issues"
   },
   "homepage": "https://github.com/javieraviles/Har2Postman#readme",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
